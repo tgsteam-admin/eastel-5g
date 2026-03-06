@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { useState, useEffect } from "react";
-import LanguageSwitcher from "./LanguageSwitcher";
-import Starfield from "./Starfield";
+import Image from "next/image"
+import { useTranslations } from "next-intl"
+import { useState, useEffect } from "react"
+import LanguageSwitcher from "./LanguageSwitcher"
+import Starfield from "./Starfield"
 
 export default function Home() {
-  const t = useTranslations();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations()
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const colorMap = {
     pink: {
@@ -55,7 +55,7 @@ export default function Home() {
       glow: "neon-glow-blue",
       border: "border-neon-blue",
     },
-  };
+  }
 
   const featuresData = [
     {
@@ -94,7 +94,7 @@ export default function Home() {
       color: "blue",
       image: "/images/cashback-icon.svg",
     },
-  ];
+  ]
 
   const plansData = [
     {
@@ -118,20 +118,20 @@ export default function Home() {
       color: "gold",
       img: "/images/ez50.png",
     },
-  ];
+  ]
 
   const linkFooter = [
     { name: "consumer", href: "https://eastel.com.my/mobile-plan/" },
     { name: "business", href: "https://eastel.com.my/business/" },
     { name: "promoters", href: "https://eastel.com.my/promoter/" },
     { name: "faq", href: "https://eastel.com.my/faq/" },
-  ];
+  ]
 
   const footerBottom = [
     { name: "tnc", href: "https://eastel.com.my/terms-and-conditions/" },
     { name: "privacy", href: "https://eastel.com.my/privacy-policy/" },
     { name: "delivery", href: "https://eastel.com.my/delivery-policy/" },
-  ];
+  ]
 
   const footerSocial = [
     {
@@ -143,7 +143,7 @@ export default function Home() {
       name: "TikTok",
       href: "https://www.tiktok.com/@eastel_official?is_from_webapp=1&sender_device=pc",
     },
-  ];
+  ]
 
   return (
     <div className="min-h-screen font-sans selection:bg-neon-pink selection:text-white">
@@ -469,7 +469,7 @@ export default function Home() {
                 {t("footer.resources")}
               </h4>
               <ul className="space-y-4 text-sm font-bold text-white/40">
-                {linkFooter.map((link) => (
+                {linkFooter.map(link => (
                   <li key={link.name}>
                     <a
                       href={link.href}
@@ -486,7 +486,7 @@ export default function Home() {
                 {t("footer.follow")}
               </h4>
               <ul className="space-y-4 text-sm font-bold text-white/40">
-                {footerSocial.map((platform) => (
+                {footerSocial.map(platform => (
                   <li key={platform}>
                     <a
                       href={platform.href}
@@ -501,7 +501,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center justify-between gap-8 pt-10 border-t border-white/5 md:flex-row">
             <div className="flex gap-8 text-[10px] text-white/30 uppercase font-black tracking-widest">
-              {footerBottom.map((link) => (
+              {footerBottom.map(link => (
                 <a
                   key={link.name}
                   href={link.href}
@@ -515,5 +515,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  );
+  )
 }

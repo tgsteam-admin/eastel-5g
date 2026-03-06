@@ -1,12 +1,12 @@
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import { Hanken_Grotesk } from "next/font/google";
-import "../globals.css";
+import { NextIntlClientProvider } from "next-intl"
+import { getMessages } from "next-intl/server"
+import { Hanken_Grotesk } from "next/font/google"
+import "../globals.css"
 
 const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
   subsets: ["latin"],
-});
+})
 
 export const metadata = {
   title:
@@ -29,10 +29,15 @@ export const metadata = {
     locale: "en_MY",
     type: "website",
   },
-};
+}
+
+export function generateStaticParams() {
+  // static export requires us to enumerate all locale routes ahead of time
+  return [{ locale: "en" }, { locale: "ms" }, { locale: "zh" }]
+}
 
 export default async function RootLayout({ children, params: { locale } }) {
-  const messages = await getMessages();
+  const messages = await getMessages()
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -42,5 +47,5 @@ export default async function RootLayout({ children, params: { locale } }) {
         </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }
