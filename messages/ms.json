@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Laman Utama",
+    "why": "Kenapa Eastel",
+    "plans": "Pelan",
+    "contact": "Hubungi",
+    "cta": "Mulakan Sekarang"
+  },
+  "hero": {
+    "tagline": "5G Terpantas Malaysia Kini Di Sini",
+    "title1": "Sedia Maklum!",
+    "title2": "Masa Untuk 5G.",
+    "desc": "Sertai kuasa kependaman ultra-rendah dan kelajuan luar biasa. Prabayar pertama di Malaysia dengan perayauan antarabangsa PERCUMA. Alami sambungan tanpa had.",
+    "cta1Title": "Hubungan Promoter",
+    "cta1Desc": "Pakar WhatsApp",
+    "cta2Title": "Rujukan Rasmi",
+    "cta2Desc": "Daftar & Sertai",
+    "cta3Title": "Tawaran Eksklusif",
+    "cta3Desc": "Tuntut Insentif 5G"
+  },
+  "features": {
+    "title": "Kenapa Eastel?",
+    "subtitle": "Memperkasakan masa depan digital anda",
+    "items": {
+      "ultra5g": {
+        "title": "5G Ultra-Pantas",
+        "desc": "Kependaman rendah dan data berkelajuan tinggi untuk permainan dan penstriman."
+      },
+      "roaming": {
+        "title": "Perayauan Percuma",
+        "desc": "Prabayar pertama dengan Perayauan Antarabangsa Percuma di kawasan terpilih."
+      },
+      "incentives": {
+        "title": "24% Insentif",
+        "desc": "Serlahkan usahawan dalaman anda dengan ekosistem ganjaran kami."
+      },
+      "wallet": {
+        "title": "Dompet Eastel",
+        "desc": "Urus dana anda dan dapatkan pulangan tunai terus melalui aplikasi kami."
+      },
+      "loyalty": {
+        "title": "Kesetiaan eCOMM",
+        "desc": "Kumpul mata dan tebus ganjaran dengan setiap transaksi."
+      },
+      "cashback": {
+        "title": "Rebat Tunai",
+        "desc": "Dapatkan lebih nilai kembali untuk setiap Ringgit yang anda belanjakan."
+      }
+    }
+  },
+  "plans": {
+    "title": "Pilih Pelan Anda",
+    "highSpeed": "Kelajuan Tinggi",
+    "validity": "Sah selama 30 Hari",
+    "unlimited": "Penggunaan Apl Tanpa Had",
+    "hotspot": "Hotspot Berkongsi",
+    "select": "Pilih"
+  },
+  "promo": {
+    "title": "Dapatkan Apl Eastel",
+    "subtitle": "Urus, Jana & Sambun.",
+    "desc": "Tambah nilai, semak data, dan jana Insentif di mana sahaja. Tersedia sekarang di semua platform utama."
+  },
+  "footer": {
+    "desc": "Memperkasakan Malaysia with gabungan teknologi 5G dan ganjaran keusahawanan. Kekal berhubung, kekal rewarded.",
+    "resources": "Sumber",
+    "follow": "Ikuti Kami",
+    "links": {
+      "consumer": "Pengguna",
+      "business": "Perniagaan",
+      "promoters": "Promoter",
+      "faq": "Soalan Lazim",
+      "tnc": "Terma & Syarat",
+      "privacy": "Privasi",
+      "delivery": "Penghantaran",
+      "return": "Polisi Pemulangan"
+    }
+  }
+}

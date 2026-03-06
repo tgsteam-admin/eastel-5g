@@ -1,26 +1,348 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #050a1a;
+  --foreground: #ffffff;
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-gold: #ffcc00;
+  --neon-purple: #bf00ff;
+  --neon-green: #39ff14;
+  --neon-blue: #4d4dff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-hanken), "Hanken Grotesk", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Neon Utilities */
+/* Premium Neon Glows */
+.neon-glow-pink {
+  box-shadow: 
+    0 0 20px rgba(255, 0, 255, 0.3),
+    0 0 40px rgba(255, 0, 255, 0.1),
+    inset 0 0 12px rgba(255, 0, 255, 0.4);
+  border: 1px solid rgba(255, 0, 255, 0.4);
+}
+
+.neon-glow-cyan {
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(0, 255, 255, 0.1),
+    inset 0 0 12px rgba(0, 255, 255, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+.neon-glow-gold {
+  box-shadow: 
+    0 0 20px rgba(255, 204, 0, 0.3),
+    0 0 40px rgba(255, 204, 0, 0.1),
+    inset 0 0 12px rgba(255, 204, 0, 0.4);
+  border: 1px solid rgba(255, 204, 0, 0.4);
+}
+
+.neon-glow-purple {
+  box-shadow: 
+    0 0 20px rgba(191, 0, 255, 0.3),
+    0 0 40px rgba(191, 0, 255, 0.1),
+    inset 0 0 12px rgba(191, 0, 255, 0.4);
+  border: 1px solid rgba(191, 0, 255, 0.4);
+}
+
+.neon-glow-green {
+  box-shadow: 
+    0 0 20px rgba(57, 255, 20, 0.3),
+    0 0 40px rgba(57, 255, 20, 0.1),
+    inset 0 0 12px rgba(57, 255, 20, 0.4);
+  border: 1px solid rgba(57, 255, 20, 0.4);
+}
+
+.neon-glow-blue {
+  box-shadow: 
+    0 0 20px rgba(77, 77, 255, 0.3),
+    0 0 40px rgba(77, 77, 255, 0.1),
+    inset 0 0 12px rgba(77, 77, 255, 0.4);
+  border: 1px solid rgba(77, 77, 255, 0.4);
+}
+
+.neon-text-pink {
+  text-shadow: 0 0 8px rgba(255, 0, 255, 0.8);
+}
+
+.space-bg {
+  background: radial-gradient(circle at center, #101835 0%, #050a1a 100%);
+  position: relative;
+}
+
+.space-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 50px 160px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 130px 80px, #fff, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Stargazing Animation */
+.stars,
+.stars2,
+.stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+/* Generate more obvious stars with thicker pixels and slight glow */
+.stars {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    1744px 122px #fff,
+    134px 1321px #fff,
+    92px 859px #fff,
+    1639px 30px #fff,
+    1740px 1475px #fff,
+    462px 1978px #fff,
+    1713px 1860px #fff,
+    1970px 188px #fff,
+    598px 899px #fff,
+    507px 1195px #fff,
+    649px 21px #fff,
+    1058px 902px #fff,
+    1133px 439px #fff,
+    1109px 40px #fff,
+    522px 1313px #fff,
+    589px 461px #fff,
+    466px 1459px #fff,
+    445px 338px #fff,
+    60px 424px #fff,
+    210px 405px #fff,
+    1932px 1877px #fff,
+    696px 1656px #fff,
+    1152px 641px #fff,
+    1275px 1142px #fff,
+    488px 1840px #fff,
+    789px 1215px #fff,
+    579px 1202px #fff,
+    672px 135px #fff,
+    136px 610px #fff,
+    313px 432px #fff,
+    1089px 1290px #fff,
+    1686px 1162px #fff,
+    527px 1667px #fff,
+    648px 233px #fff,
+    1530px 1541px #fff,
+    1801px 1872px #fff,
+    1937px 186px #fff,
+    1017px 933px #fff,
+    322px 1056px #fff,
+    422px 34px #fff,
+    1381px 1368px #fff,
+    204px 1876px #fff,
+    1039px 381px #fff,
+    1690px 1431px #fff,
+    239px 839px #fff,
+    1481px 404px #fff,
+    1459px 1856px #fff,
+    1572px 556px #fff,
+    839px 1030px #fff,
+    678px 1148px #fff,
+    1441px 1460px #fff,
+    51px 1857px #fff,
+    1251px 528px #fff,
+    616px 208px #fff,
+    761px 311px #fff,
+    1916px 144px #fff,
+    639px 6px #fff;
+  animation: animStar 40s linear infinite;
+}
+.stars:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    1744px 122px #fff,
+    134px 1321px #fff,
+    92px 859px #fff,
+    1639px 30px #fff,
+    1740px 1475px #fff,
+    462px 1978px #fff,
+    1713px 1860px #fff,
+    1970px 188px #fff,
+    598px 899px #fff,
+    507px 1195px #fff,
+    649px 21px #fff,
+    1058px 902px #fff,
+    1133px 439px #fff,
+    1109px 40px #fff,
+    522px 1313px #fff,
+    589px 461px #fff,
+    466px 1459px #fff,
+    445px 338px #fff,
+    60px 424px #fff,
+    210px 405px #fff,
+    1932px 1877px #fff,
+    696px 1656px #fff,
+    1152px 641px #fff,
+    1275px 1142px #fff,
+    488px 1840px #fff,
+    789px 1215px #fff,
+    579px 1202px #fff,
+    672px 135px #fff,
+    136px 610px #fff,
+    313px 432px #fff,
+    1089px 1290px #fff,
+    1686px 1162px #fff,
+    527px 1667px #fff,
+    648px 233px #fff,
+    1530px 1541px #fff,
+    1801px 1872px #fff,
+    1937px 186px #fff,
+    1017px 933px #fff,
+    322px 1056px #fff,
+    422px 34px #fff,
+    1381px 1368px #fff,
+    204px 1876px #fff,
+    1039px 381px #fff,
+    1690px 1431px #fff,
+    239px 839px #fff,
+    1481px 404px #fff,
+    1459px 1856px #fff,
+    1572px 556px #fff,
+    839px 1030px #fff,
+    678px 1148px #fff,
+    1441px 1460px #fff,
+    51px 1857px #fff,
+    1251px 528px #fff,
+    616px 208px #fff,
+    761px 311px #fff,
+    1916px 144px #fff,
+    639px 6px #fff;
+}
+
+/* Layer 2 (Bigger, faster stars) */
+.stars2 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    1244px 322px #ff00ff,
+    534px 121px #00ffff,
+    492px 1859px #ff00ff,
+    639px 630px #fff,
+    740px 125px #00ffff,
+    1462px 978px #fff,
+    113px 1460px #fff,
+    970px 888px #ff00ff,
+    98px 899px #fff,
+    507px 195px #00ffff;
+  animation: animStar 25s linear infinite;
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(0.5px);
+}
+.stars2:after {
+  content: " ";
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+    1244px 322px #ff00ff,
+    534px 121px #00ffff,
+    492px 1859px #ff00ff,
+    639px 630px #fff,
+    740px 125px #00ffff,
+    1462px 978px #fff,
+    113px 1460px #fff,
+    970px 888px #ff00ff,
+    98px 899px #fff,
+    507px 195px #00ffff;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Meteors (Shooting Stars) */
+.meteor-1,
+.meteor-2,
+.meteor-3 {
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(-45deg, #ff00ff, transparent);
+  transform: rotate(-45deg);
+  animation: meteor 4s linear infinite;
+  opacity: 0;
+  filter: drop-shadow(0 0 6px #ff00ff);
+}
+
+.meteor-1 {
+  top: 10%;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.meteor-2 {
+  top: -10%;
+  left: 40%;
+  width: 250px;
+  background: linear-gradient(-45deg, #00ffff, transparent);
+  filter: drop-shadow(0 0 6px #00ffff);
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.meteor-3 {
+  top: 30%;
+  left: 90%;
+  width: 100px;
+  animation-duration: 6s;
+  animation-delay: 4.5s;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px) scale(1);
+  }
+  to {
+    transform: translateY(-2000px) scale(1);
+  }
+}
+
+@keyframes meteor {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-1000px) translateY(1000px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-1000px) translateY(1000px) rotate(-45deg);
+    opacity: 0;
+  }
 }

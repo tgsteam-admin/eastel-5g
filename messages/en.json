@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "home": "Home",
+    "why": "Why Eastel",
+    "plans": "Plans",
+    "contact": "Contact",
+    "cta": "Get Started"
+  },
+  "hero": {
+    "tagline": "Malaysia's Fastest 5G is Here",
+    "title1": "Hold Tight!",
+    "title2": "It's 5G Time.",
+    "desc": "Unleash the power of ultra-low latency and blazing speeds. The 1st prepaid in Malaysia with FREE international roaming. Experience connection without limits.",
+    "cta1Title": "Promoter Contact",
+    "cta1Desc": "WhatsApp Specialist",
+    "cta2Title": "Official Referral",
+    "cta2Desc": "Register & Join",
+    "cta3Title": "Exclusive Offer",
+    "cta3Desc": "Claim 5G Incentive"
+  },
+  "features": {
+    "title": "Why Eastel?",
+    "subtitle": "Empowering your digital future",
+    "items": {
+      "ultra5g": {
+        "title": "Ultra-Fast 5G",
+        "desc": "Low latency and high-speed data for gaming and streaming."
+      },
+      "roaming": {
+        "title": "Free Roaming",
+        "desc": "1st Prepaid with Free International Roaming across selective regions."
+      },
+      "incentives": {
+        "title": "24% Incentives",
+        "desc": "Unleash your inner entrepreneur with our rewarding ecosystem."
+      },
+      "wallet": {
+        "title": "Eastel Wallet",
+        "desc": "Manage your funds and get cashback directly through our app."
+      },
+      "loyalty": {
+        "title": "eCOMM Loyalty",
+        "desc": "Earn points and redeem rewards with every transaction."
+      },
+      "cashback": {
+        "title": "Cashback Rebate",
+        "desc": "Get more value back for every Ringgit you spend."
+      }
+    }
+  },
+  "plans": {
+    "title": "Choose Your Plan",
+    "highSpeed": "High Speed",
+    "validity": "Sah selama 30 Hari",
+    "unlimited": "Penggunaan Apl Tanpa Had",
+    "hotspot": "Hotspot Berkongsi",
+    "select": "Select"
+  },
+  "promo": {
+    "title": "Get The Eastel App",
+    "subtitle": "Manage, Earn & Connect.",
+    "desc": "Top up, check data, and earn Incentives on the go. Available now on all major platforms."
+  },
+  "footer": {
+    "desc": "Empowering Malaysia with the fusion of 5G technology and entrepreneurial rewards. Stay connected, stay rewarded.",
+    "resources": "Resources",
+    "follow": "Follow Us",
+    "links": {
+      "consumer": "Consumer",
+      "business": "Business",
+      "promoters": "Promoters",
+      "faq": "FAQ",
+      "tnc": "T&C",
+      "privacy": "Privacy",
+      "delivery": "Delivery",
+      "return": "Return Policy"
+    }
+  }
+}
