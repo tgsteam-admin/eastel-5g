@@ -1,0 +1,81 @@
+{
+  "navbar": {
+    "home": "首页",
+    "why": "为何选择 Eastel",
+    "plans": "配套",
+    "contact": "联系我们",
+    "cta": "立即开始"
+  },
+  "hero": {
+    "tagline": "马来西亚最快的 5G 已在此",
+    "title1": "坐稳了！",
+    "title2": "5G 时代已到。",
+    "desc": "释放超低延迟和极速的力量。马来西亚首个提供免费国际漫游的预付卡。体验无极限的连接。",
+    "cta1Title": "推广员联系",
+    "cta1Desc": "WhatsApp 专家",
+    "cta2Title": "官方推荐",
+    "cta2Desc": "立即注册加入",
+    "cta3Title": "独家优惠",
+    "cta3Desc": "领取 5G 奖励"
+  },
+  "features": {
+    "title": "为何选择 Eastel？",
+    "subtitle": "赋能您的数字未来",
+    "items": {
+      "ultra5g": {
+        "title": "极速 5G",
+        "desc": "为游戏和流媒体提供低延迟和高速数据。"
+      },
+      "roaming": {
+        "title": "免费漫游",
+        "desc": "首个在特定地区提供免费国际漫游的预付卡。"
+      },
+      "incentives": {
+        "title": "24% 激励金",
+        "desc": "通过我们的奖励生态系统释放您的创业潜能。"
+      },
+      "wallet": {
+        "title": "Eastel 钱包",
+        "desc": "通过我们的应用直接管理您的资金并获得现金返还。"
+      },
+      "loyalty": {
+        "title": "eCOMM 忠诚度",
+        "desc": "每笔交易都能赚取积分并兑换奖励。"
+      },
+      "cashback": {
+        "title": "现金回扣",
+        "desc": "您消费的每一林吉特都能获得更多价值回报。"
+      }
+    }
+  },
+  "plans": {
+    "title": "选择您的配套",
+    "highSpeed": "高速数据",
+    "validity": "有效期 30 天",
+    "unlimited": "无限应用使用",
+    "hotspot": "共享热点",
+    "select": "选择",
+    "morePlans": "更多配套"
+
+  },
+  "promo": {
+    "title": "下载 Eastel 应用",
+    "subtitle": "管理、赚取与连接。",
+    "desc": "随时随地充值、检查数据并赚取激励金。现已在所有主要平台上线。"
+  },
+  "footer": {
+    "desc": "融合 5G 技术和创业奖励，赋能马来西亚。保持连接，保持奖励。",
+    "resources": "资源",
+    "follow": "关注我们",
+    "links": {
+      "consumer": "消费者",
+      "business": "商业",
+      "promoters": "推广员",
+      "faq": "常见问题",
+      "tnc": "条款与条件",
+      "privacy": "隐私政策",
+      "delivery": "递送信息",
+      "return": "退货政策"
+    }
+  }
+}
