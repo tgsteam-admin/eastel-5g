@@ -5,11 +5,10 @@ import path from 'path';
 
 export const locales = ['en', 'zh', 'ms'];
 
-export default getRequestConfig(async ({ locale, requestLocale }) => {
+export default getRequestConfig(async ({ locale /*, requestLocale */ }) => {
+  // For a fully static export we avoid reading headers.  The locale is
+  // derived from the route (params.locale) so we can ignore `requestLocale`.
   let resolvedLocale = locale;
-  if (requestLocale) {
-    resolvedLocale = await requestLocale;
-  }
   
   if (!resolvedLocale || !locales.includes(resolvedLocale)) {
     resolvedLocale = 'en';

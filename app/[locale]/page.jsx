@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Starfield from "./Starfield";
 
+
 export default function Home() {
   const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);

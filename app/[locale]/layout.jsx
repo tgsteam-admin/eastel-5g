@@ -31,6 +31,15 @@ export const metadata = {
   },
 };
 
+export function generateStaticParams() {
+  // static export requires us to enumerate all locale routes ahead of time
+  return [
+    { locale: "en" },
+    { locale: "ms" },
+    { locale: "zh" },
+  ];
+}
+
 export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages();
 

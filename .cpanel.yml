@@ -1,4 +1,9 @@
 ---
 deployment:
   tasks:
+    # install dependencies, build and export a static site before copying
+    - yarn install --production
+    - yarn build
+    # `next build` now outputs a ready-to-serve `out/` directory thanks to
+    # `output: 'export'` in next.config.js
     - /bin/cp -RT out/ /home/eastel5g.com/public_html/
